@@ -164,6 +164,5 @@ pub mod utils {
             ::ton_abi::Param::new("expire", ::ton_abi::ParamType::Expire)
         };
     }
-
     pub use declare_function;
 }
