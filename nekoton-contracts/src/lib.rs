@@ -111,7 +111,7 @@ impl RunLocalSimple for ExecutionContext<'_> {
 #[error("Non zero result code: {0}")]
 pub struct NonZeroResultCode(pub i32);
 
-mod utils {
+pub mod utils {
     macro_rules! declare_function {
         (
             $(abi: $abi:ident,)?
