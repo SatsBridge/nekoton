@@ -112,6 +112,7 @@ impl RunLocalSimple for ExecutionContext<'_> {
 pub struct NonZeroResultCode(pub i32);
 
 pub mod utils {
+    #[macro_export]
     macro_rules! declare_function {
         (
             $(abi: $abi:ident,)?
@@ -164,5 +165,5 @@ pub mod utils {
         };
     }
 
-    pub(crate) use declare_function;
+    pub use declare_function;
 }
